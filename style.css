@@ -84,8 +84,15 @@ img{
     height: auto;
     margin: auto;
     right: 65px;
+    bottom: 0;
 }
-#ust #foto h1{
+
+#ust{
+    background-color: #9999FF;
+}
+
+#ust #foto h1 a{
+    color: whitesmoke;
     list-style-type: none;
     margin-left: 65px;
 }
@@ -97,7 +104,7 @@ img{
 }
 
 #ust #sosyal ul li{
-    color: whitesmoke;
+    color: #9999CC;
     width: 6%;
     float: right;
     text-align: center;
@@ -106,40 +113,12 @@ img{
     padding: 10px;
 }
 
-/* 500px den daha küçük ekranlara tepkisel buton */
-@media screen and (max-width: 500px){
-    #ust #sosyal ul li{width: 100%}
-}
-
-#orta{
-    overflow: scroll;
-}
-
-#menu{
-    background-color: #9999FF;
-    color: whitesmoke;
-}
-
-#ust{
-    background-color: #9999CC;
-}
-/* sosyal linkleri */
-#ust #sosyal ul li{
-    color: whitesmoke;
-    font-family: Bahnschrift;
-    font-weight: bold;
-    padding: 5px;
-    text-decoration: none;
-    margin-right: 15px;
-
-}
-
 #ust #sosyal ul li a:link{
-    color: whitesmoke;
+    color: red;
 }
 
 #ust #sosyal ul li a:visited{
-    color: brown;
+    color: #9966FF;
 }
 
 #ust #sosyal ul li a:hover{
@@ -152,8 +131,35 @@ img{
     text-decoration: underline;
 }
 
-#alt {
+/* 500px den daha küçük ekranlara tepkisel buton */
+@media screen and (max-width: 500px){
+    #ust #sosyal ul li{width: 100%}
+}
+
+#orta{
+    overflow: scroll;
+    text-align: center;
+}
+
+#menu{
     background-color: #9999CC;
+    color: whitesmoke;
+}
+
+
+/* sosyal linkleri */
+#ust #sosyal ul li{
+    color: whitesmoke;
+    font-family: Bahnschrift;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+
+#alt {
+    background-color: #9999FF;
     text-align: center;
     position: center;
     float: center;
@@ -178,10 +184,8 @@ img{
 }
 
 #hakkımda{
-    position: center;
-    text-align: left;
-}
-
-#orta{
+    width: 65%;
+    float: left;
     text-align: center;
+    padding: 10%;
 }
