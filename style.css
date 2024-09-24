@@ -80,11 +80,13 @@ img{
 /* sosyal medya ikonları*/
 #ikon{
     width: 50px;
+    right: 65px;
+    bottom: 50%;
+    position: center;
     float: right;
     height: auto;
     margin: auto;
-    right: 65px;
-    bottom: 0;
+
 }
 
 #ust{
