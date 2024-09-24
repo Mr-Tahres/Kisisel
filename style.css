@@ -91,6 +91,7 @@ img{
 
 #ust{
     background-color: #9999FF;
+    position: marker;
 }
 
 #ust #foto h1 a{
@@ -116,7 +117,7 @@ img{
 }
 
 #ust #sosyal ul li a:link{
-    color: red;
+    color: #9999FF;
 }
 
 #ust #sosyal ul li a:visited{
@@ -179,6 +180,13 @@ img{
 }
 
 #sona{
+    width: 50px;
+    float: right;
+    position: fixed;
+    right: 0;
+}
+
+#yukari{
     width: 50px;
     float: right;
     position: fixed;
