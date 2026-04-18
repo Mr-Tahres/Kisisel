@@ -1,0 +1,201 @@
+/* kutular sabit g */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* kutu g */
+.profil{width: 25%;}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* satırlar */
+.row{
+    /*border: yellowgreen solid 2px;*/
+    /*background-color: yellowgreen;*/
+    margin: 5px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+/* satırlar yan yana gelmemesi */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* tepkisel resim */
+img{
+    width: 90%;
+    height: auto;
+    border-radius: 41%;
+    display: block;
+    border: 2px solid black;
+    position: center;
+}
+
+[class*="profil"]{
+    float: right;
+    margin-right: 35px;
+    padding: 15px;
+    right: 35px;
+    /*border: 1px solid red;*/
+    /*background-color: wheat;*/
+    border-radius: 65px;
+}
+
+/* col- yasla */
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+    /*background-color: wheat;*/
+    margin: auto;
+    border-radius: 60px;
+}
+
+/* 500px den daha küçük ekranlara */
+@media screen and (max-width: 500px){
+    [class*="col-"]{width: 100%}
+}
+
+/* kutu yükseklikleri */
+#ust{height: 100px;}
+#menu{min-height: 80px;}
+#orta{min-height: 400px;}
+#alt{min-height: 80px;}
+
+/* sosyal medya ikonları*/
+#ikon{
+    width: 50px;
+    right: 65px;
+    bottom: 50%;
+    position: center;
+    float: right;
+    height: auto;
+    margin: auto;
+
+}
+
+#ust{
+    background-color: #9999FF;
+    position: marker;
+}
+
+#ust #foto h1 a{
+    color: whitesmoke;
+    list-style-type: none;
+    margin-left: 65px;
+}
+
+/* anamenu */
+#ust #sosyal ul{
+    list-style-type: none;
+    margin-right: 65px;
+}
+
+#ust #sosyal ul li{
+    color: #9999CC;
+    width: 6%;
+    float: right;
+    text-align: center;
+    /*background-color: wheat;*/
+    /*border-radius: 9px;*/
+    padding: 10px;
+}
+
+#ust #sosyal ul li a:link{
+    color: #9999FF;
+}
+
+#ust #sosyal ul li a:visited{
+    color: #9966FF;
+}
+
+#ust #sosyal ul li a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+
+#ust #sosyal ul li a:active{
+    color: red;
+    text-decoration: underline;
+}
+
+/* 500px den daha küçük ekranlara tepkisel buton */
+@media screen and (max-width: 500px){
+    #ust #sosyal ul li{width: 100%}
+}
+
+#orta{
+    overflow: scroll;
+    text-align: center;
+}
+
+#menu{
+    background-color: #9999CC;
+    color: whitesmoke;
+}
+
+
+/* sosyal linkleri */
+#ust #sosyal ul li{
+    color: whitesmoke;
+    font-family: Bahnschrift;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+
+#alt {
+    background-color: #9999FF;
+    text-align: center;
+    position: center;
+    float: center;
+    color: whitesmoke;
+}
+
+#basa{
+    width: 50px;
+    float: right;
+    height: auto;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#sona{
+    width: 50px;
+    float: right;
+    position: fixed;
+    right: 0;
+}
+
+#yukari{
+    width: 50px;
+    float: right;
+    position: fixed;
+    right: 0;
+}
+
+#hakkımda{
+    width: 65%;
+    float: left;
+    text-align: center;
+    padding: 10%;
+}
